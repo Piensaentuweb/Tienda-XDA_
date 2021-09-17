@@ -1,0 +1,62 @@
+//main content
+.content{
+  &__text{
+    padding: 3rem;
+  }
+  &__title{
+    font-family: $old-standard;
+    font-size: $font-size-xxx-large;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  &__paragraph{
+    font-family: $raleway;
+    color: cd ;
+    line-height: 2;
+  }
+  &__buttons{
+    border: 1px solid $smoky-black;
+    color: $smoky-black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $font-size-large;
+    margin: 27px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Raleway", serif;
+  }
+
+}
+
+.header {
+  background: url(/assets/images/imagen1.png);
+  height: 100vh;
+  background-size: cover;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    height: 50vh !important;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .content {
+    width: 45%;
+    height: 100vh;
+    // position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+  }
+
+
+  .header {
+    width: 55%;
+    float: right;
+    height: 100vh;
+  }
+}
+

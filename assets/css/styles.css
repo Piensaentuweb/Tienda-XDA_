@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,700;1,400&family=Raleway:wght@400;700&display=swap");
+body {
+  font-family: "Old Standard TT", serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Raleway", serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.content__text {
+  padding: 3rem;
+}
+.content__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.content__paragraph {
+  font-family: "Raleway", sans-serif;
+  color: cd;
+  line-height: 2;
+}
+.content__buttons {
+  border: 1px solid #0C0910;
+  color: #0C0910;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 27px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Raleway", serif;
+}
+
+.header {
+  background: url(/assets/images/imagen1.png);
+  height: 100vh;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 50vh !important;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    width: 45%;
+    height: 100vh;
+  }
+
+  .header {
+    width: 55%;
+    float: right;
+    height: 100vh;
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 2.6rem;
+}
+.navbar a {
+  text-decoration: none;
+  outline: none;
+  font-family: "Raleway", serif;
+}
+.navbar ul {
+  margin-left: auto;
+  list-style: none;
+}
+.navbar__brand {
+  background-color: #0C0910;
+  color: #FFF;
+  position: absolute;
+  padding: 33px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  left: 0;
+  top: 0;
+  font-family: "Old Standard TT", serif !important;
+}
+.navbar__toggle {
+  height: 2px;
+  background-color: #000;
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+  transition: all 0.3s;
+  width: 30px;
+  height: 20px;
+  margin: 100px auto;
+}
+.navbar__respmenu a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  float: right;
+}
+
+.nav-item {
+  padding: 0 2rem;
+}
+
+.nav-link {
+  color: #0C0910;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar .navbar__brand a {
+  background-color: #0C0910;
+  color: #FFF;
+}
+
+@media (min-width: 992px) {
+  .navbar__toggle {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .navbar ul {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .navbar__respmenu input[type=checkbox], .navbar__respmenu .fa-bars, .navbar__respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar__respmenu .fa-bars, .navbar__respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+
+  .navbar__respmenu input[type=checkbox] {
+    opacity: 0;
+  }
+
+  .navbar__respmenu {
+    position: relative;
+    top: -14px;
+    min-height: 3vh;
+  }
+
+  .navbar__respmenu nav {
+    display: none;
+  }
+
+  .navbar__respmenu input:checked ~ nav {
+    display: block;
+  }
+
+  .navbar__respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .navbar__respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+}
+.content__newsletter {
+  background-color: #0C0910;
+  color: #FFF;
+  position: relative;
+}
+.content__form {
+  padding: 1em 8em 1em 3em;
+}
+.content__form h2 {
+  font-size: 30px;
+  margin-bottom: 0.5em;
+}
+.content__form label {
+  display: block;
+  margin-bottom: 1em;
+}
+.content__form input {
+  padding: 0.5em 1em;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.content__form input::placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.content__subscription {
+  background-color: #FFF;
+  color: #0C0910;
+  position: absolute;
+  padding: 1em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  writing-mode: vertical-rl;
+}
+
+@media (min-width: 992px) {
+  .content__newsletter {
+    position: fixed;
+    width: 45%;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
